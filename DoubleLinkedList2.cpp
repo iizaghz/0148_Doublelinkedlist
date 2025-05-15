@@ -176,4 +176,18 @@ class DoubleLinkedList
             i--;
         }
     }
+
+    void searchData()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+        int rollNo;
+        cout << "\nEnter the roll number to search:";
+        cin >> rollNo;
+
+        Node *current = START;
+    }
 };
