@@ -93,12 +93,22 @@ class DoubleLinkedList
 
         Node *current = START;
 
-        //step 1 : transverse the list to find the node
+        //step 1 : tranverse the list to find the node
         while (current != NULL && current->noMhs !=rollNo)
         {
             current = current->next;
             return;
         }
+        //step 2 : if node is at the beginning
+        if (current == START)
+        {
+            START = current->next;
+            if (START != NULL) // step 2a : START = START.next
+            {
+                START->prev = NULL; // step 2b : START.prev = NULL
+            }
+        }
+       
     }
     
 };
