@@ -20,4 +20,12 @@ class DoubleLinkedList
         {
             START = NULL;
         }
+
+    void addNode()
+    {
+        int nim;
+        cout << "\nEnter the roll member of student :";
+        cin >> nim;
+    }
+    
 };
