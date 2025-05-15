@@ -193,5 +193,16 @@ class DoubleLinkedList
         //step 1 : traverse to find matching roll number
         while (current != NULL && current->noMhs != rolNo)
             current = current->next;
+
+        //step 2 : output result
+        if (current == NULL)
+        {
+            cout << "Record found\n";
+        }
+        else
+        {
+            cout << "Record found\n";
+            cout << "Roll number: " << current->noMhs << endl;
+        }
     }
 };
