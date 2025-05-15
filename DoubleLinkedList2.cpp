@@ -141,6 +141,10 @@ class DoubleLinkedList
     while (currentNode != NULL)
     {
         cout << i + 1 << ". " << currentNode->noMhs << " "<< endl;
+
+        //step 3 : move to next node
+        currentNode = currentNode->next;
+        i++;
     }
 
     }
