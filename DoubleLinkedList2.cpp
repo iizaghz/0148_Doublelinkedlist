@@ -139,13 +139,21 @@ class DoubleLinkedList
     cout << "\nRecords in ascending order of roll number are:\n";
     int i = 0;
     while (currentNode != NULL)
-    {
-        cout << i + 1 << ". " << currentNode->noMhs << " "<< endl;
+        {
+            cout << i + 1 << ". " << currentNode->noMhs << " "<< endl;
 
-        //step 3 : move to next node
-        currentNode = currentNode->next;
-        i++;
+            //step 3 : move to next node
+            currentNode = currentNode->next;
+            i++;
+        }
     }
 
+    void revtraverse()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
     }
 };
