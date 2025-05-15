@@ -184,10 +184,14 @@ class DoubleLinkedList
             cout << "\nList is empty" << endl;
             return;
         }
-        int rollNo;
+        int rolNo;
         cout << "\nEnter the roll number to search:";
-        cin >> rollNo;
+        cin >> rolNo;
 
         Node *current = START;
+
+        //step 1 : traverse to find matching roll number
+        while (current != NULL && current->noMhs != rolNo)
+            current = current->next;
     }
 };
