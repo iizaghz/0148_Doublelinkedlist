@@ -108,7 +108,12 @@ class DoubleLinkedList
                 START->prev = NULL; // step 2b : START.prev = NULL
             }
         }
-       
+        else
+        {
+            // step 3 : link previous node to next of  current
+            current->prev->next = current->next;
+
+        }
     }
     
 };
